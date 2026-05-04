@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Marka Renkleri */
+  --color-efesos-red: #CC0000;
+  --color-efesos-yellow: #FFCC00;
+  --color-efesos-dark: #1A1A1A;
+}
+
+@layer components {
+  /* Galeri Efektleri */
+  .gallery-item {
+    @apply relative overflow-hidden rounded-[2.5rem] cursor-pointer shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 bg-gray-200;
+  }
+  .gallery-img {
+    @apply w-full h-full object-cover transition-transform duration-700 hover:scale-110 opacity-0;
+  }
+  /* Resim yüklendiğinde görünmesi için küçük bir trick */
+  .gallery-img-loaded {
+    @apply opacity-100;
+  }
+}
+
+/* Sayfa Geçiş Yumuşatma */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-efesos-dark bg-white;
+}

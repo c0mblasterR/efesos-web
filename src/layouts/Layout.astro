@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title} | Efesos Döner</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+	</head>
+	<body class="selection:bg-efesos-yellow selection:text-efesos-red">
+		<slot />
+	</body>
+</html>
