@@ -3,6 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import { branches } from '../data/branches.js';
 import { menu } from '../data/menu.js';
 
+import mainImg from "../img/main.jpg";
+import food1Img from "../img/food1.jpg";
+import food2Img from "../img/food2.webp";
+import IndoorImg from "../img/indoor.jpeg";
+import food3Img from "../img/food3.webp";
+
 // Tüm menü kalemlerini filtreleme için düz bir listeye çeviriyoruz
 const allItems = menu.flatMap(cat => 
   cat.items.map(item => ({ ...item, categoryName: cat.category }))
@@ -13,11 +19,11 @@ const allTags = [...new Set(allItems.flatMap(item => item.tags || []))];
 
 // MERKEZİ GÖRSEL YÖNETİMİ
 const imgPool = {
-  hero: "../../img/main.jpg",
-  durum: "../../img/food1.jpg",
-  iskender: "../img/food2.webp",
-  ates: "../img/indoor.jpeg",
-  lavas: "../img/food3.webp"
+  hero: mainImg.src,
+  durum: food1Img.src,
+  iskender: food2Img.src,
+  ates: IndoorImg.src,
+  lavas: food3Img.src
 };
 ---
 
