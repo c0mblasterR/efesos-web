@@ -1,16 +1,48 @@
 export const menu = [
   {
     category: "Dürümler",
-    items: [
-      { name: "Özel Soslu Et Döner", price: "180 TL", desc: "Et döner, özel domates sosu, patates, turşu." },
-      { name: "Efesos Tavuk Dürüm", price: "140 TL", desc: "Tavuk döner, özel sos, çıtır patates." }
-    ]
-  },
-  {
-    category: "Porsiyonlar",
-    items: [
-      { name: "İskender", price: "280 TL", desc: "Bol tereyağlı, yoğurtlu ve özel soslu." },
-      { name: "Pilav Üstü Et Döner", price: "260 TL", desc: "Tereyağlı pirinç pilavı eşliğinde." }
-    ]
+        items: [
+          { name: "Tavuk Döner", price: "120 TL", desc: "Soğan piyazı, patates kızartması ile", tags: ["Döner"] },
+          { name: "Beyti Tavuk Döner", price: "90 TL", desc: "Süzme yoğurt, közlenmiş domates, biber, tereyağlı sos ile", tags: ["Döner"] },
+          { name: "İskender (Tavuk Dönerden)", price: "90 TL", desc: "Süzme yoğurt, salatalık turşusu, domates, biber, tereyağlı sos ile", tags: ["Döner"] },
+          { name: "2'li Avantaj Menü", price: "120 TL", desc: "2 Adet Tavuk Döner Dürüm + Patates Kızartması(2 adet) + 2 Adet Ayran(29.3cl)", tags: ["Uygun Fiyat"] },
+          { name: "Muhteşem 3'lü Menü", price: "90 TL", desc: "3 Adet Tavuk Döner Dürüm + Patates Kızartması + İçecek(1L)", tags: ["Uygun Fiyat"] },
+          { name: "Small Tavuk  Menü", price: "120 TL", desc: "Small Tavuk Döner Dürüm + Patates Kızartması + İçecek", tags: ["Uygun Fiyat"] },
+          { name: "Medium Tavuk Menü", price: "120 TL", desc: "Medium Tavuk Döner Dürüm + Patates Kızartması + İçecek", tags: ["Uygun Fiyat, Popüler"] },
+          { name: "Large Tavuk Menü", price: "120 TL", desc: "Large Tavuk Döner Dürüm + Patates Kızartması + Ayran(30cl)", tags: ["Uygun Fiyat"] },
+          { name: "X Large Tavuk Menü", price: "120 TL", desc: "X Large Tavuk Döner Dürüm + Patates Kızartması + İçecek", tags: ["Uygun Fiyat, Popüler"] },    
+          { name: "Small Tavuk Dürüm", price: "120 TL", desc: "60 gr. tavuk döner, patates kızartması, turşu, sarımsaklı mayonez, Efesos özel sos ile", tags: ["Popüler, Tavuk Dürüm"] },
+          { name: "Medium Tavuk Dürüm", price: "90 TL", desc: "80 gr. tavuk döner, patates kızartması, turşu, sarımsaklı mayonez, Efesos özel sos ile", tags: ["Popüler, Tavuk Dürüm"] },
+          { name: "Large Tavuk Dürüm", price: "120 TL", desc: "100 gr. tavuk döner, patates kızartması, turşu, sarımsaklı mayonez, Efesos özel sos ile", tags: ["Popüler, Tavuk Dürüm"] },
+          { name: "X Large Tavuk Dürüm", price: "120 TL", desc: "120 gr. tavuk döner, patates kızartması, turşu, sarımsaklı mayonez, Efesos özel sos ile", tags: ["Popüler, Tavuk Dürüm"] },
+          { name: "Small Vejetaryen Dürüm", price: "120 TL", desc: "Patates kızartması, kornişon turşu, özel sos", tags: ["Vejetaryen"] },
+          { name: "Medium Vejetaryen Dürüm", price: "90 TL", desc: "Patates kızartması, kornişon turşu, özel sos", tags: ["Vejetaryen"] },
+          { name: "Large Vejetaryen Dürüm", price: "120 TL", desc: "Patates kızartması, kornişon turşu, özel sos", tags: ["Vejetaryen"] },
+		  { name: "Karışık Turşu (100 gr.)", price: "120 TL", desc: "Salatalık turşusu, biber turşusu", tags: ["Yan Ürünler"] },
+          { name: "Patates Kızartması (Orta Boy)", price: "90 TL", desc: "Parmak dilim", tags: ["Yan Ürünler"] },
+          { name: "Soğan Halkası (10 Adet)", price: "120 TL", desc: "Adet olarak servis edilir.", tags: ["Yan Ürünler"] },
+          { name: "Soğan Halkası (6 Adet)", price: "120 TL", desc: "Adet olarak servis edilir.", tags: ["Yan Ürünler"] },
+          { name: "Soğan Halkası (8 Adet)", price: "90 TL", desc: "Adet olarak servis edilir.", tags: ["Yan Ürünler"] },
+          { name: "Kornişon Turşu", price: "120 TL", desc: "Tek kişilik", tags: ["Yan Ürünler"] },
+		  { name: "Patates Kızartması (Küçük Boy)", price: "120 TL", desc: "Parmak dilim", tags: ["Yan Ürünler"] },
+		  { name: "Ketçap (2 Adet)", price: "120 TL", desc: "Adet olarak servis edilmektedir.", tags: ["Soslar"] },
+          { name: "Mayonez (2 Adet)", price: "90 TL", desc: "Adet olarak servis edilmektedir.", tags: ["Soslar"] },
+          { name: "Sarımsaklı Mayonez (30 gr.)", price: "120 TL", desc: "30 gr. olarak servis edilir.", tags: ["Soslar"] },
+		  { name: "Zehir Acı Sos", price: "120 TL", desc: "Tek kişilik", tags: ["Soslar"] },
+	      { name: "Pepsi (33cl)", price: "120 TL", desc: "Kutu içecek", tags: ["İçecekler"] },
+          { name: "Pepsi Max (33cl)", price: "90 TL", desc: "Kutu içecek", tags: ["İçecekler"] },
+          { name: "Yedigün (33cl)", price: "120 TL", desc: "Kutu içecek", tags: ["İçecekler"] },
+		  { name: "7UP (33cl)", price: "120 TL", desc: "Kutu içecek", tags: ["İçecekler"] },
+		  { name: "Eker Tombul Ayran (29.3cl)", price: "120 TL", desc: "Büyük", tags: ["İçecekler"] },
+		  { name: "Erikli Su (50cl)", price: "90 TL", desc: "Pet şişe", tags: ["İçecekler"] },
+		  { name: "Pepsi (1L)", price: "120 TL", desc: "Pet şişe", tags: ["İçecekler"] },
+		  { name: "Yedigün (1L)", price: "120 TL", desc: "Pet şişe", tags: ["İçecekler"] },
+		  { name: "Acılı Şalgam Suyu (33cl)", price: "120 TL", desc: "Pet şişe", tags: ["İçecekler"] },
+		  { name: "Acısız Şalgam Suyu (33cl)", price: "90 TL", desc: "Pet şişe", tags: ["İçecekler"] },
+		  { name: "Lipton Ice Tea Şeftali (33cl)", price: "120 TL", desc: "Kutu içecek", tags: ["İçecekler"] },
+		  { name: "Lipton Ice Tea Limon (33cl)", price: "120 TL", desc: "Kutu içecek", tags: ["İçecekler"] },
+		  { name: "Lipton Ice Tea Mango (33cl)", price: "120 TL", desc: "Kutu içecek", tags: ["İçecekler"] },
+		  { name: "Pepsi Max (1L)", price: "120 TL", desc: "Pet şişe", tags: ["İçecekler"] },
+   ]
   }
 ];
